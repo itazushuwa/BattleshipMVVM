@@ -1,0 +1,30 @@
+﻿<Page x:Class="Battleship_2.Views.PausePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      ShowsNavigationUI="False"
+      xmlns:vm="clr-namespace:Battleship_2.ViewModels"
+      WindowTitle="Battleship 2" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      WindowHeight="600" WindowWidth="1000"
+      d:DataContext="{d:DesignInstance Type=vm:PausePage_VM}"
+      Background="{StaticResource Background_1}">
+
+    <Grid>
+        <Border Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource MenuBorderStyle}"
+                Padding="30">
+            <StackPanel>
+                <Button Style="{StaticResource MainMenuButtons}" Content="{StaticResource ResumeGame}"
+                        Command="{Binding ResumeCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Page}}"/>
+                <Button Style="{StaticResource MainMenuButtons}" Content="{StaticResource ToMainMenu}"
+                        Command="{Binding ToMainMenuCommand}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Page}}"/>
+                <Button Style="{StaticResource MainMenuButtons}" Content="{StaticResource Exit}"
+                        Command="{Binding ExitCommand}"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

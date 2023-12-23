@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    
+    <sys:String x:Key="ErrorMessage">Error</sys:String>
+    <sys:String x:Key="StartGame">Start game</sys:String>
+    <sys:String x:Key="Exit">Exit</sys:String>
+    <sys:String x:Key="Title">Battleship 2</sys:String>
+    <sys:String x:Key="ToMainMenu">Main menu</sys:String>
+    <sys:String x:Key="ResumeGame">Resume</sys:String>
+    <sys:String x:Key="PlayerWinMessage">You win!</sys:String>
+    <sys:String x:Key="PlayerLoseMessage">You lose!</sys:String>
+    
+</ResourceDictionary>
